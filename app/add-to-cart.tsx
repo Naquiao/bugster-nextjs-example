@@ -19,6 +19,7 @@ export function AddToCart() {
   return (
     <AddToCartButton
       isLoading={isLoading}
+      disabled
       onClick={async () => {
         setIsLoading(true);
         track('add_to_cart:clicked');
